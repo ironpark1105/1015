@@ -1,0 +1,402 @@
+/* style.css */
+:root {
+    --main-color: #0066CC;
+    --text-color: #333;
+    --footer-bg-color: #e2e2e2;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  ul {
+    list-style-type: none;
+  }
+  h2{
+    font-size: 36px;
+  }
+  
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: var(--text-color);
+    font-size: 18px; 
+    font-weight: 400;
+  }
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .top-menu {
+    background: var(--main-color);
+    text-align: right;
+    padding: 10px 0;
+    font-size: 14px;
+    min-width: 1200px;
+  }
+  .top-menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .top-menu ul li a {
+    color: #fff;
+  }
+  #main-header {
+      position: relative;
+      border-bottom: 1px solid #ccc;
+      z-index: 1;
+  }
+  #main-header .header-box {
+    position: relative;
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #main-header .header-box h1 {
+    position: absolute;
+    left: 0;
+    top: 17px;
+  }
+  #main-header .search {
+    position: absolute;
+    right: 0;
+    top: 20px;
+  }
+  .search{
+      position: absolute;
+      right: 0;
+      top: 28px;
+  }
+  .search .fa{
+    font-size: 24px;
+  }
+  /* gnb */
+  #gnb {
+    display: inline-block;
+    margin-top: 30px;
+  }
+  #gnb > .depth1 {
+    display: flex;
+  }
+  #gnb > .depth1 > li {
+    width: 110px;
+  }
+  #gnb > .depth1 > li:hover > a{
+    color: var(--main-color);
+  }
+  #gnb .depth2 {
+    padding: 30px 0;
+    /* 슬라이드 25떨어진 위치에서 드롭다운  */
+    transform: translateY(23px);
+    background: #fff;
+    display: none;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  #gnb .depth2 > li > a {
+    display: block;
+    padding: 6px 0;
+  }
+  #gnb .depth2 > li:hover a{
+    color: var(--main-color);
+  }
+  #search-popup{
+      border: 1px solid #ccc;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      background: #fff;
+      position: absolute;
+      top: 120px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: none;
+  }
+  #search-popup input[type=search]{
+      height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #btn-search{
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    background: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+  }
+  #btn-close{
+      position: absolute;
+      right: 0;
+      padding: 5px;
+      top: -30px;
+      border: 1px solid #fff;
+      background: white;
+      font-size: 28px;
+  }
+  #btn-close :hover{
+      background: var(--main-color);
+      color: white;
+  }
+  #search-popup .container{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  #main-visual{
+    position: relative;
+  }
+  .slider{
+    position: absolute;
+    width: 1920px;
+    height: 600px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .slider img{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  /*pager*/
+  .pager{
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+  }
+  .leftBtn img, .rightBtn img{
+    width: 150px;
+    height: 150px;
+  }
+  .leftBtn img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -200px;
+  }
+  .rightBtn img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1100px;
+  }
+  /* 버튼 */
+  .btn{
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 50px;
+    background: var(--main-color);
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    border: none;
+    font-size: 18px;
+  }
+  .btn-outline{
+    background: transparent;
+    border: 1px solid #fff;
+    color: white;
+  }
+  .Btn-primary{
+    background: var(--main-color);
+    color: #fff;
+  }
+  .img img{
+    width: 644px;
+    height: 420px;
+    display: inline-block;
+  }
+  /* insideroche */
+  #about{
+    padding: 100px 0;
+  }
+  #about .container{
+    display: flex;
+  }
+  #about .title{
+    padding-right: 60px;
+    padding-top: 40px;
+  }
+  #about .title h2{
+    font-size: 56px;
+  }
+  #about .title h2 span{
+    font-weight: 400;
+  }
+  #about .title p{
+    font-size: 22px;
+    margin-bottom: 60px;
+  }
+/* 제품정보 
+  #product{
+    background: ;
+  }*/
+  #product .container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+  #product h2{
+    color: var(--main-color);
+    font-weight: 400;
+    margin-bottom: 60px;
+  }
+  .product-box{
+    display: flex;
+    justify-content: space-between;
+  }
+  .product{
+    background: #fff;
+    padding-bottom: 24px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px ;
+  }
+  #product .product-box .product img {
+    margin-bottom: 30px;
+  }
+  .product h3{
+    font-weight: 500;
+    font-size: 22px;
+    margin: 14px;
+  }
+  .product a{
+    font-size: 16px;
+    color: var(--main-color);
+    text-decoration: underline ; 
+  }
+/* 사회적책임 */
+  #responsibility{
+    max-width: 1920px;
+    height: 420px;
+    text-align: center;
+    background: url(./images/responsibility.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    padding: 60px 0;
+    color: white;
+    background-repeat: no-repeat;
+  }
+  #responsibility h2{
+    margin-bottom: 60px;
+  }
+  #responsibility p{
+    font-size: 22px;
+    line-height: 40px;
+    margin-bottom: 55px;
+  }
+  /* 뉴스 */
+  #news-section{
+    background: #fff;
+  }
+  #news-section h2{
+    font-size: 32px;
+    color: var(--main-color);
+    font-weight: 400;
+    margin-bottom: 53px;
+  }
+  #news-section .container{
+    padding: 100px 0;
+    display: flex;
+  }
+  #news-section #news{
+    width: 50%;
+    border-right: 1px solid #ccc;
+    padding-right: 86px;
+  }
+  #news-section #news h2{
+    margin-bottom: 50px;
+  }
+  #news-section #news .news-list{
+    margin-bottom: 80px;
+  }
+  .news-list li{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+  }
+  .news-list li .date{
+    font-size: 16px;
+    color: #666;
+    line-height: 31px;
+  }
+  /* 컨텍트 */
+  #news-section #contact{
+    width: 50%;
+    padding-left: 48px;
+    margin-bottom: 86px;
+  }
+  #news-section #contact h2{
+    margin-bottom: 50px;
+  }
+  #contact .form-group{
+    display: flex;
+    margin-bottom: 20px;
+  }
+  #contact label{
+    width: 105px;
+    display: inline-block;
+  }
+  #contact form{
+    font-size: 20px;
+    font-weight: 400;
+  }
+  #contact form input,
+  #contact form textarea{
+    width: 100%;
+    height: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-color: #ccc;
+    border-style: solid;
+    font-size: 18px;
+  }
+  #contact form textarea{
+    height: 100px;
+    padding: 1em;
+  }
+  #contact form #submit{
+    margin-top: 30px;
+  }
+  #main-footer{
+    background:var(--footer-bg-color);
+  }
+  #main-footer .container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #main-footer .footer-link a{
+    font-size: 16px;
+    color: #6a6a6a;
+    font-weight: 400;
+    margin-right: 1.2em;
+    display: inline-block;
+  }
+  #main-footer .footer-link{
+    margin-bottom: 24px;
+  }
+  #main-footer .footer-info{
+    font-size: 14px;
+    color: #6a6a6a;
+  }
+  .footer-logo{
+    width: 78px;
+    height: 78px;
+  }
+  .footer-info-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
